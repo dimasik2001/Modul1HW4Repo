@@ -2,6 +2,7 @@
 
 if (int.TryParse(Console.ReadLine(), out var length))
 {
+    Console.WriteLine("Enter the length of array:");
     var sourceArray = GetRandomArray(length, 1, 26);
     var evenArray = new int[EvenOddCount(sourceArray, Parity.Even)];
     var oddArray = new int[EvenOddCount(sourceArray, Parity.Odd)];
